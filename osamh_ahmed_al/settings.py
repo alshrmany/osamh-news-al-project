@@ -36,7 +36,7 @@ load_dotenv()
 RAILWAY_PUBLIC_DOMAIN = os.environ.get('RAILWAY_PUBLIC_DOMAIN', '')
 
 ALLOWED_HOSTS = [
-    'your-django-app-production-8182.up.railway.app',
+    'newspro.up.railway.app',
     '.up.railway.app',
     '.railway.app',
     'localhost',
