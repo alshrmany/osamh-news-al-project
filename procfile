@@ -1,0 +1,2 @@
+web: gunicorn osamh_ahmed_al.wsgi:application
+release: python manage.py migrate
