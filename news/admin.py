@@ -32,3 +32,10 @@ class ReactionAdmin(admin.ModelAdmin):
     list_filter = ['reaction_type', 'created_at']
     search_fields = ['user__username', 'article__title']
     readonly_fields = ['created_at']
+
+@admin.register(Category)
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['name', 'created_at']
+    prepopulated_fields={'slug':('name',)}
+    search_fields = ['name']
+    readonly_fields = ['created_at']
